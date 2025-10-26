@@ -29,6 +29,12 @@ spring:
       routes:
 
 
+
+        - id: ms-bus-service
+          uri: lb://ms-bus-service
+          predicates:
+            - Path=/bus/**
+
         - id: ms-venta-service
           uri: lb://ms-venta-service
           predicates:
