@@ -15,7 +15,7 @@
     </parent>
 
     <groupId>com.example</groupId>
-    <artifactId>ms-bus-service</artifactId>
+    <artifactId>ms-route-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ms-almacen</name>
     <description>Microservicio Almacén Puma Sports</description>
