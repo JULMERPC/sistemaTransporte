@@ -1,4 +1,4 @@
-//package com.example.ms.route.client;
+//package com.example.ms.history.client;
 //
 //import org.springframework.cloud.openfeign.FeignClient;
 //import org.springframework.web.bind.annotation.GetMapping;

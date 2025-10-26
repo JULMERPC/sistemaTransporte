@@ -1,6 +1,5 @@
 package com.example.ms.bus.client;
 
-import com.example.ms.bus.dto.MateriaPrimaDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
