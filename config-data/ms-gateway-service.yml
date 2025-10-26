@@ -53,6 +53,12 @@ spring:
             - Path=/history/**
 
 
+        - id: ms-tracking-service
+          uri: lb://ms-tracking-service
+          predicates:
+            - Path=/history/**
+
+
         - id: ms-venta-service
           uri: lb://ms-venta-service
           predicates:
