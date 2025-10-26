@@ -46,6 +46,13 @@ spring:
           predicates:
             - Path=/history/**
 
+
+        - id: ms-notification-service
+          uri: lb://ms-notification-service
+          predicates:
+            - Path=/history/**
+
+
         - id: ms-venta-service
           uri: lb://ms-venta-service
           predicates:
