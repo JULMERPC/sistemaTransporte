@@ -33,38 +33,41 @@ spring:
         - id: ms-bus-service
           uri: lb://ms-bus-service
           predicates:
-            - Path=/bus/**
+            - Path=/api/buses/**, /api/conductores/**
+#          filters:
+#            - AuthFilter
 
 
         - id: ms-route-service
           uri: lb://ms-route-service
           predicates:
-            - Path=/route/**
+            - Path=/api/rutas/**
+#          filters:
+#            - AuthFilter
 
         - id: ms-history-service
           uri: lb://ms-history-service
           predicates:
-            - Path=/history/**
+            - Path=/api/recorridos/**
+#          filters:
+#              - AuthFilter
 
 
         - id: ms-notification-service
           uri: lb://ms-notification-service
           predicates:
-            - Path=/history/**
+            - Path=/api/notificaciones/**, /ws/notificaciones/**
+#          filters:
+#              - AuthFilter
 
 
         - id: ms-tracking-service
           uri: lb://ms-tracking-service
           predicates:
-            - Path=/history/**
+            - Path=/api/tracking/**, /ws/tracking/**
+#          filters:
+#              - AuthFilter
 
-
-        - id: ms-venta-service
-          uri: lb://ms-venta-service
-          predicates:
-            - Path=/api/clientes/**, /api/detalle-ventas/**, /api/ventas/**
-          filters:
-            - AuthFilter
 
         - id: ms-auth-service
           uri: lb://ms-auth-service
@@ -72,26 +75,7 @@ spring:
             - Path=/auth/**
 
 
-        - id: ms-proveedor2-service
-          uri: lb://ms-proveedor2-service
-          predicates:
-            - Path=/api/proveedores/**
-#          filters:
-#            - AuthFilter
 
-        - id: ms-catalogo-service
-          uri: lb://ms-catalogo-service
-          predicates:
-            - Path=/categorias/**
-          filters:
-            - AuthFilter
-
-        - id: ms-almacen-service
-          uri: lb://ms-almacen-service
-          predicates:
-            - Path=/api/almacenes/**, /api/detalle-ingresos/**, /api/ingresos-materia-prima/**, /api/materias-primas/**, /api/stock-almacen/**
-#          filters:
-#            - AuthFilter
 
 
 
